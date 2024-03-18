@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, 'Itim';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vh;
+    height: auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    right: 0;
+    left: 0;
+    background-color: #FFF7F1;
+    box-shadow: 0px 1px 7px 0px;
+    z-index: 1000;
+}
+
+header nav h1{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-family: 'Itim';
+    color: #AF2655;
+}
+header nav .logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #AF2655;
+}
+header nav ul li a:hover{
+    color: coral;
+}
+
+body .describe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+body .describe .slogan h1{
+    font-size: 45px;
+    top: -70px;
+    left: 40px;
+    text-align: center;
+}
+body .describe .slogan h1 span{
+    margin-left: 20px;
+    color: #DF826C;
+    line-height: 22px;
+    font-size: 60px;
+    font-family: 'Itim';
+    text-align: center;
+}
+body .describe .image-slogan img{
+    display: flex;
+    width: 370px;
+    position: relative;
+    left: 50px;
+}
+.home p{
+    display: flex;
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    line-height: 20px;
+}
+.food-info p{
+    display: flex;
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    line-height: 20px;
+}
+body .button{
+    margin-top: 25px;
+    background: #FFBE98;
+    position: relative;
+    left: 300px;
+    bottom: 10px;
+    width: 170px;
+    cursor: pointer;
+    padding: 8px 27px;
+    border-radius: 6px 6px;
+}
+
+body .button a{
+    color: #AF2655;
+    margin-right: 3px;
+    margin-left: 6px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Paytone One';
+}
+body .button a:hover{
+    color: #FFF;
+}
+/*Recipes*/
+body .recipes{
+    width: 100%;
+    padding: 70px 0;
+}
+body .recipes a{
+    text-decoration: none;
+    color: #000;
+}
+body .recipes a h1{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+body .recipes a h1 i{
+    margin-left: 20px;
+}
+body .recipes a:hover{
+    color: coral;
+}
+body .recipes .recipe-container{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+body .recipes .recipe-container .card{
+    width: 300px;
+    height: 500px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px;
+    display: block;
+}
+body .recipes .recipe-container .card .food-img{
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+body .recipes .recipe-container .card .food-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+body .recipes .recipe-container .card .food-info h3{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 8px auto;
+    font-size: 20px;
+    color: #FFB0B0;
+}
+
+body .recipes .recipe-container .card .food-info p{
+    text-align: justify;
+    display: flex;
+    margin-top: 35px;
+    font-size: 12px;
+    width: 250px;
+    margin-left: -80px;
+}
+
+body .recipes .recipe-container .card .food-info .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    margin-left: -250px;
+    transition: 0.3s;
+    margin-top: -10px;
+}
+
+.close{
+    display: none;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.about-container{
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 15px;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-container aside{
+    border-radius: 100%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+.img-about{
+    width: 100%;
+    object-position: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+  }
+
+
+.bar-menu{
+    display: none;
+}
+
+    /*mobile*/
+@media only screen and (max-width: 767px) {
+   
+    header {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    header nav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    header nav h1 {
+        font-size: 25px;
+        color: #AF2655;
+    }
+    header nav .logo {
+        width: 75px;
+    }
+
+    header nav .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #FFF7F1;
+        transition: all .8s;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    .close i{
+        font-size: 25px;
+    }
+
+    header nav ul li a{
+        gap: 10px;
+        font-size: 35px;
+    }
+
+    
+    
+    body .describe {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        padding-top: 5px; 
+    }
+
+    body .describe .slogan h1 {
+        margin-top: 150px;
+        margin-bottom: -80px;
+        font-size: 30px; 
+        top: 300px; 
+        left: 0; 
+        text-align: center;
+    }
+
+    body .describe .slogan h1 span {
+        margin-left: 10px; 
+        font-size: 40px; 
+    }
+
+    body .describe .image-slogan img {
+        width: 90%; 
+        max-width: 300px; 
+        position: static;
+        margin: 100px -40px 50px 20px; 
+    }
+
+    .home p {
+        width: 80%;
+        text-align: justify;
+        margin-left: -60px;
+    }
+
+    body .button {
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: 20px auto;
+        width: 190px; 
+    }
+
+    body .button a {
+        margin: 0; 
+        padding: 8px 20px; 
+        font-size: 14px; 
+    }
+    
+    body .recipes a h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-top: -70px;
+    }
+    
+    body .recipes .recipe-container {
+        grid-template-columns: 1fr;
+    }
+    
+    body .recipes .recipe-container .card {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    
+    body .recipes .recipe-container .card .food-img {
+        width: 90%;
+        height: 300px;
+    }
+    
+    body .recipes .recipe-container .card .food-info h3 {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    
+    body .recipes .recipe-container .card .food-info p {
+        margin-top: 50px;
+        margin-left: -80px;
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    body .recipes .recipe-container .card .food-info .button {
+        margin-left: 80px;
+        width: 180px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    
+   .bar-menu{
+    display: block;
+   }
+   .bar-menu i{
+    font-size: 25px;
+    margin-right: 12px;
+   }
+}
+    
+
+    
